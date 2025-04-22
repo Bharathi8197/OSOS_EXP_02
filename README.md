@@ -1,9 +1,12 @@
 Exp 2 : Configure SElinux
+
 AIM:
 To configure SElinux.
+
 EQUIPMENTS REQUIRED:
 Hardware: Minimum 4 GB RAM and 25 GB storage – essential for running services like Cockpit and handling system updates smoothly.
 Software: Red Hat Enterprise Linux (RHEL) or any open-source Linux OS like Fedora or CentOS Stream – used for system administration and repository creation.
+
 PROCEDURE AND COMMENTS:
 1. Checking SELinux ports
  The first command semanage port -l | grep http checks the Security-Enhanced Linux (SELinux) policy for ports associated with the http service. SELinux is a security feature in Linux that restricts what programs can access. The semanage port -l command lists all defined SELinux ports and the grep http command filters the output to show only ports related to http. 
